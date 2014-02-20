@@ -1,7 +1,9 @@
 {
   "name": "stopplicht",
-  "version": "0.1.0",
+  "version": "0.1.1",
+  "preferGlobal": true,
   "description": "A red/green indicator for OSX. Ideal for test indications.",
+  "repository": "git@github.com:dustyburwell/stopplicht.git",
   "main": "lib/index.js",
   "scripts": {
     "start": "node lib/index.js",
