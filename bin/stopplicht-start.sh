@@ -1,5 +1,4 @@
 #!/usr/bin/env sh
 
-DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
-cd $DIR
-node ../lib/index.js &
+SCRIPT="$(dirname "$(readlink "$0")")/../lib/index.js"
+node $SCRIPT &
