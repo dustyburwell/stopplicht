@@ -1,0 +1,24 @@
+{
+  "name": "stopplicht",
+  "version": "0.1.0",
+  "description": "A red/green indicator for OSX. Ideal for test indications.",
+  "main": "lib/index.js",
+  "scripts": {
+    "start": "node lib/index.js",
+    "test": "echo Add some tests, fool"
+  },
+  "bin": {
+    "stopplicht": "./bin/stopplicht-start.sh",
+    "stopplicht-stop": "./bin/stopplicht-stop.js",
+    "stopplicht-idle": "./bin/stopplicht-idle.js",
+    "stopplicht-red": "./bin/stopplicht-red.js",
+    "stopplicht-green": "./bin/stopplicht-green.js",
+    "stopplicht-running": "./bin/stopplicht-running.js"
+  },
+  "repository": "",
+  "author": "Dusty Burwell (dustyburwell@gmail.com)",
+  "license": "MIT",
+  "dependencies": {
+    "NodObjC": "0.0.15"
+  }
+}
