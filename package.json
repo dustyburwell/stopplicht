@@ -1,6 +1,6 @@
 {
   "name": "stopplicht",
-  "version": "0.1.4",
+  "version": "0.1.5",
   "preferGlobal": true,
   "description": "A red/green indicator for OSX. Ideal for test indications.",
   "repository": "git@github.com:dustyburwell/stopplicht.git",
@@ -13,9 +13,14 @@
     "stopplicht": "./bin/stopplicht-start.js",
     "stopplicht-stop": "./bin/stopplicht-stop.js",
     "stopplicht-idle": "./bin/stopplicht-idle.js",
+    "stopplicht-grey": "./bin/stopplicht-idle.js",
+    "stopplicht-gray": "./bin/stopplicht-idle.js",
     "stopplicht-red": "./bin/stopplicht-red.js",
     "stopplicht-green": "./bin/stopplicht-green.js",
-    "stopplicht-running": "./bin/stopplicht-running.js"
+    "stopplicht-running": "./bin/stopplicht-running.js",
+    "stopplicht-yellow": "./bin/stopplicht-running.js",
+    "stopplicht-test": "./bin/stopplicht-test.sh",
+    "stopplicht-exec": "./bin/stopplicht-test.sh"
   },
   "author": "Dusty Burwell (dustyburwell@gmail.com)",
   "license": "MIT",
