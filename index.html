@@ -1,0 +1,64 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>Stopplicht by dustyburwell</title>
+
+    <link rel="stylesheet" href="stylesheets/styles.css">
+    <link rel="stylesheet" href="stylesheets/pygment_trac.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <h1>Stopplicht</h1>
+        <p>Menu bar indicator for osx</p>
+
+        <p class="view"><a href="https://github.com/dustyburwell/stopplicht">View the Project on GitHub <small>dustyburwell/stopplicht</small></a></p>
+
+
+        <ul>
+          <li><a href="https://github.com/dustyburwell/stopplicht/zipball/master">Download <strong>ZIP File</strong></a></li>
+          <li><a href="https://github.com/dustyburwell/stopplicht/tarball/master">Download <strong>TAR Ball</strong></a></li>
+          <li><a href="https://github.com/dustyburwell/stopplicht">View On <strong>GitHub</strong></a></li>
+        </ul>
+      </header>
+      <section>
+        <h1>
+<a name="stopplicht" class="anchor" href="#stopplicht"><span class="octicon octicon-link"></span></a>Stopplicht</h1>
+
+<p>Stopplicht is a menu bar indicator for osx. There are four states available: red, green, yellow, and grey. These states make it great for showing test run status during TDD, but it could be used for anything.</p>
+
+<h2>
+<a name="get-it" class="anchor" href="#get-it"><span class="octicon octicon-link"></span></a>Get it</h2>
+
+<p>Stopplicht requires Node.js. To install stopplicht, run <code>npm install -g stopplicht</code>.</p>
+
+<h2>
+<a name="run-it" class="anchor" href="#run-it"><span class="octicon octicon-link"></span></a>Run it</h2>
+
+<p>Once stopplicht has been installed, it can be started by running <code>stopplicht</code> in the terminal. Stopplicht will start as a background process and is, as of yet, non-interactive. To quit stopplicht, run <code>stopplicht-stop</code>.</p>
+
+<h2>
+<a name="use-it" class="anchor" href="#use-it"><span class="octicon octicon-link"></span></a>Use it</h2>
+
+<p>Stopplicht runs a tcp server on port <code>17357</code> and listens for short messages to change it's state. For example, to change the indicator to red using netcat:</p>
+
+<pre><code>&gt; echo 1 | nc localhost 17357
+</code></pre>
+
+<p>The available messages are <code>0</code> (grey), <code>1</code> (red), <code>2</code> (green), <code>3</code> (yellow), and <code>stop</code> to kill the server. Short cut commands are provided so that integration with other scripts should be easier. Those commands are <code>stopplicht-idle</code>, <code>stopplicht-red</code>, <code>stopplicht-green</code>, <code>stopplicht-running</code>, and <code>stopplicht-stop</code>, respectively.</p>
+      </section>
+      <footer>
+        <p>This project is maintained by <a href="https://github.com/dustyburwell">dustyburwell</a></p>
+        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
+      </footer>
+    </div>
+    <script src="javascripts/scale.fix.js"></script>
+    
+  </body>
+</html>
