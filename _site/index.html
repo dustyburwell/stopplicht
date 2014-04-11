@@ -28,30 +28,35 @@
         </ul>
       </header>
       <section>
-        <h1>
-<a name="stopplicht" class="anchor" href="#stopplicht"><span class="octicon octicon-link"></span></a>Stopplicht</h1>
+        <h1 id="stopplicht">Stopplicht</h1>
 
 <p>Stopplicht is a menu bar indicator for osx. There are four states available: red, green, yellow, and grey. These states make it great for showing test run status during TDD, but it could be used for anything.</p>
 
-<h2>
-<a name="get-it" class="anchor" href="#get-it"><span class="octicon octicon-link"></span></a>Get it</h2>
+<p><img src="http://dusty.burwells.us/stopplicht/images/screenshot.png" alt="screenshot" /></p>
+
+<h2 id="get_it">Get it</h2>
 
 <p>Stopplicht requires Node.js. To install stopplicht, run <code>npm install -g stopplicht</code>.</p>
 
-<h2>
-<a name="run-it" class="anchor" href="#run-it"><span class="octicon octicon-link"></span></a>Run it</h2>
+<h2 id="run_it">Run it</h2>
 
 <p>Once stopplicht has been installed, it can be started by running <code>stopplicht</code> in the terminal. Stopplicht will start as a background process and is, as of yet, non-interactive. To quit stopplicht, run <code>stopplicht-stop</code>.</p>
 
-<h2>
-<a name="use-it" class="anchor" href="#use-it"><span class="octicon octicon-link"></span></a>Use it</h2>
+<h2 id="use_it">Use it</h2>
 
-<p>Stopplicht runs a tcp server on port <code>17357</code> and listens for short messages to change it's state. For example, to change the indicator to red using netcat:</p>
+<p>Stopplicht runs a tcp server on port <code>17357</code> and listens for short messages to change it’s state. For example, to change the indicator to red using netcat:</p>
 
-<pre><code>&gt; echo 1 | nc localhost 17357
-</code></pre>
+<pre><code>&gt; echo 1 | nc localhost 17357</code></pre>
 
-<p>The available messages are <code>0</code> (grey), <code>1</code> (red), <code>2</code> (green), <code>3</code> (yellow), and <code>stop</code> to kill the server. Short cut commands are provided so that integration with other scripts should be easier. Those commands are <code>stopplicht-idle</code>, <code>stopplicht-red</code>, <code>stopplicht-green</code>, <code>stopplicht-running</code>, and <code>stopplicht-stop</code>, respectively.</p>
+<p>The available messages are <code>0</code> (grey), <code>1</code> <span style='color:red'>(red)</span>, <code>2</code> <span style='color: limegreen'>(green)</span>, <code>3</code> <span style='color: orange'>(yellow)</span>, and <code>stop</code> to kill the server. Short cut commands are provided so that integration with other scripts should be easier. Those commands are <code>stopplicht-grey</code>, <code>stopplicht-red</code>, <code>stopplicht-green</code>, <code>stopplicht-yellow</code>, and <code>stopplicht-stop</code>, respectively.</p>
+
+<p>Additionally, you can use the <code>stopplicht-exec</code> command followed by your favorite command to turn the indicator yellow while the command runs and then red or green to indicate failure or success respectively. Failure is indicated by a non-zero exit code. For example:</p>
+
+<pre><code>&gt; stopplicht-exec npm test</code></pre>
+
+<p>You can also throw in a file system watcher like <a href="https://github.com/quackingduck/wach">wach</a> for added excitement:</p>
+
+<pre><code>&gt; wach stopplicht-exec npm test</code></pre>
       </section>
       <footer>
         <p>This project is maintained by <a href="https://github.com/dustyburwell">dustyburwell</a></p>
@@ -59,6 +64,6 @@
       </footer>
     </div>
     <script src="javascripts/scale.fix.js"></script>
-    
+
   </body>
 </html>
