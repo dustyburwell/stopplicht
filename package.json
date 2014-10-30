@@ -1,6 +1,6 @@
 {
   "name": "stopplicht",
-  "version": "0.1.7",
+  "version": "0.1.8",
   "preferGlobal": true,
   "description": "A red/green indicator for OSX. Ideal for test indications.",
   "repository": "git@github.com:dustyburwell/stopplicht.git",
@@ -29,6 +29,6 @@
   "author": "Dusty Burwell (dustyburwell@gmail.com)",
   "license": "MIT",
   "dependencies": {
-    "NodObjC": "0.0.15"
+    "nodewebkit": "^0.10.5"
   }
 }
