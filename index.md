@@ -4,7 +4,7 @@ layout: default
 
 # Stopplicht
 
-Stopplicht is a menu bar indicator for osx. There are four states available: red, green, yellow, and grey. These states make it great for showing test run status during TDD, but it could be used for anything.
+Stopplicht is a menu bar/system tray indicator for OSX, Windows, and Linux. There are four states available: red, green, yellow, and grey. These states make it great for showing test run status during TDD, but it could be used for anything.
 
 ![screenshot](http://www.dustyburwell.com/stopplicht/images/screenshot.png)
 
