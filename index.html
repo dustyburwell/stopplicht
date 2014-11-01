@@ -12,10 +12,13 @@
         var imageName;
 
         data = data.replace('\n', '');
+        data = data.split(' ');
+        command = data[0];
+        message = data.slice(1).join(' ');
 
         c.end();
 
-        switch (data) {
+        switch (command) {
           case "stop":
             server.close();
             gui.App.quit();
