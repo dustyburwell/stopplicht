@@ -11,7 +11,7 @@
   },
   "scripts": {
     "start": "./bin/stopplicht-start.js",
-    "test": "echo Add some tests, fool"
+    "test": "./node_modules/.bin/jasmine-node --coffee spec"
   },
   "bin": {
     "stopplicht": "./bin/stopplicht.js",
@@ -31,5 +31,12 @@
   "license": "MIT",
   "dependencies": {
     "nodewebkit": "^0.10.5"
+  },
+  "devDependencies": {
+    "coffee-script": "^1.8.0",
+    "jasmine": "^2.0.1",
+    "jasmine-given": "^2.6.2",
+    "jasmine-node": "^1.14.5",
+    "sandboxed-module": "^1.0.2"
   }
 }
