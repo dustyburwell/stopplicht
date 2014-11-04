@@ -33,3 +33,7 @@ You can also throw in a file system watcher like [wach](https://github.com/quack
 ```
 > wach stopplicht-exec npm test
 ```
+
+### Integration
+
+There are some off the shelf test framework [integrations](https://github.com/dustyburwell/stopplicht/wiki/Integrations) if you don't feel like rolling your own.
