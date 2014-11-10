@@ -1,6 +1,6 @@
 {
   "name": "stopplicht",
-  "version": "0.1.13",
+  "version": "0.1.14",
   "preferGlobal": true,
   "description": "A red/green indicator for OSX, Windows, and Linux. Ideal for test indications.",
   "repository": "git@github.com:dustyburwell/stopplicht.git",
